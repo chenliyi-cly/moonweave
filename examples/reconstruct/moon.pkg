@@ -1,0 +1,5 @@
+import {
+  "chenliyi-cly/moonweave" @weave,
+}
+
+pkgtype(kind: "executable")
