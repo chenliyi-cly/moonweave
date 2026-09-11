@@ -18,7 +18,10 @@ pub fn Draft::check_loom(
   self : Draft,
   limits : LoomLimits,
 ) -> Result[Array[Finding], String] {
-  if limits.shafts < 1 || limits.raised < 0 || limits.float_length < 1 {
+  if limits.shafts < 1 ||
+    limits.raised < 0 ||
+    limits.float_length < 1 ||
+    limits.float_length > 2048 {
     return Err("weave.limits")
   }
   let out : Array[Finding] = []

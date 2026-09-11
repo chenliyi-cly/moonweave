@@ -4,6 +4,9 @@ fn hex_color(text : String) -> Bool {
     return false
   }
   let chars = text.iter().to_array()
+  if chars.length() != 7 {
+    return false
+  }
   for i = 1; i < 7; i = i + 1 {
     let c = chars[i]
     if !((c >= '0' && c <= '9') ||
