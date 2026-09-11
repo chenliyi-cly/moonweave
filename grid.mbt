@@ -35,7 +35,7 @@ pub fn read_grid(text : String) -> Result[Draft, String] {
 
 ///|
 pub fn Draft::write_grid(self : Draft) -> String {
-  let out = StringBuilder::new()
+  let out = StringBuilder()
   for row in self.drawdown() {
     for cell in row {
       out.write_string(if cell { "#" } else { "." })

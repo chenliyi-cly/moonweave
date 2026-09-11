@@ -7,7 +7,7 @@ fn main {
     [[1], [2], [3], [4]],
   ).unwrap()
   let findings = d
-    .check_loom({ shafts: 4, raised: 2, float_length: 1 })
+    .check_loom({ shafts: 4, raised: 2, float_length: 1, })
     .unwrap()
   assert_true(findings.any(fn(f) { f.code == "loom.long_float" })) catch {
     _ => abort("loom example failed")

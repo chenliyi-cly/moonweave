@@ -3,7 +3,7 @@ test "Unicode palettes and extreme numeric limits return errors without panics" 
   let d = plain(1, 1).unwrap()
   assert_true(d.svg(warp_color="#😀abcd") is Err(_))
   assert_true(
-    d.check_loom({ shafts: 2, raised: 1, float_length: 2147483647 }) is Err(_),
+    d.check_loom({ shafts: 2, raised: 1, float_length: 2147483647, }) is Err(_),
   )
   assert_true(d.tile(-2147483648, 1) is Err(_))
   assert_eq(d.shift(-2147483648, 2147483647).width(), 2)

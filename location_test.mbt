@@ -1,7 +1,7 @@
 ///|
 test "loom float findings preserve face direction and grid coordinates" {
   let d = draft(2, [1, 2, 2, 1], [[1], [2], [1]]).unwrap()
-  let found = d.check_loom({ shafts: 2, raised: 1, float_length: 1 }).unwrap()
+  let found = d.check_loom({ shafts: 2, raised: 1, float_length: 1, }).unwrap()
   let a = d.drawdown()
   for f in found {
     if f.code == "loom.long_float" || f.code == "loom.unbound_thread" {
@@ -25,7 +25,7 @@ test "loom float findings preserve face direction and grid coordinates" {
   )
   let unused = draft(3, [1, 2], [[1], [2]])
     .unwrap()
-    .check_loom({ shafts: 3, raised: 1, float_length: 1 })
+    .check_loom({ shafts: 3, raised: 1, float_length: 1, })
     .unwrap()
   assert_true(unused.any(fn(f) { f.shaft == Some(3) && f.thread == -1 }))
 }

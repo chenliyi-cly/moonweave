@@ -11,3 +11,5 @@ description = "Portable weaving draft simulation, liftplan compilation and perio
 keywords = [ "weaving", "textile", "liftplan", "drawdown" ]
 
 preferred_target = "wasm-gc"
+
+repository = "https://github.com/chenliyi-cly/moonweave"

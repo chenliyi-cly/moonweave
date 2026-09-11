@@ -37,3 +37,7 @@
 - Luna-Flow/geometry3d@0.5.1 — https://github.com/Luna-Flow/geometry3d ; https://mooncakes.io/docs/Luna-Flow/geometry3d — A small MoonBit 3D geometry foundation with core, view, frontend, TUI, Canvas, and GSAP SVG backend packages built on Luna-Flow/linear-algebra.
 - MaoDingA/moonpost@0.2.1 — https://github.com/MaoDingA/moonbitpostqc ; https://mooncakes.io/docs/MaoDingA/moonpost — Pure MoonBit toolkit for subtitles, timecode, creator cleanup, delivery checks, and post-production QC.
 - Qlcdsba/moonbit-barcoder@0.2.1 — https://github.com/Qlcdsba/moonbit-barcoder ; https://mooncakes.io/docs/Qlcdsba/moonbit-barcoder — GS1-128 and Code 128 data parser toolkit for MoonBit logistics applications.
+
+## 交付前扩词复核（2026-09-11）
+再次获取相同 2408 条目录，扩展到 weav、loom、weft、提综、浮线等词，命中 7 条名称含 weave 的记录（详见 expanded-search.json）：caseweave 是组合测试，csp-weaver-mbt 是 CSP，routeweave 是路线编码，shiftweave／rosterweave 是排班，两个 voltweave 名称是能源调度。根据这些记录的描述／关键词，它们不是织造草稿引擎；此处是元数据层比较，没有声称逐行审查这七个项目的源码。
+不加语言过滤的 GitHub weaving MoonBit、textile MoonBit、drawdown MoonBit、liftplan MoonBit 也返回零，但此时刚创建的本项目也尚未被搜索索引，直接证明了“零结果 ≠ 不存在”。因此结论始终限定为已检查资料中没有发现同题，不提供查重百分比或过审保证。

@@ -48,7 +48,7 @@ pub fn draft(
     a.sort()
     a
   })
-  Ok({ shafts, threading: threading.copy(), lifts: canonical })
+  Ok({ shafts, threading: threading.copy(), lifts: canonical, })
 }
 
 ///|

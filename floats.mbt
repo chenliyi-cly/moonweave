@@ -32,7 +32,7 @@ fn linear_runs(
       end = end + 1
     }
     if end - start >= min_length {
-      out.push({ direction, thread, start, length: end - start })
+      out.push({ direction, thread, start, length: end - start, })
     }
     start = end
   }

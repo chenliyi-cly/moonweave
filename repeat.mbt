@@ -47,7 +47,7 @@ pub fn Draft::repeat_size(self : Draft) -> RepeatSize {
       break
     }
   }
-  { warp: wx, pick: py }
+  { warp: wx, pick: py, }
 }
 
 ///|

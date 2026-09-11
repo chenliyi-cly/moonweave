@@ -33,7 +33,7 @@ pub fn Draft::svg(
   if self.width() * self.height() > 16384 {
     return Err("weave.svg_size")
   }
-  let out = StringBuilder::new()
+  let out = StringBuilder()
   out.write_string(
     "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 \{self.width()*cell} \{self.height()*cell}\" role=\"img\" aria-label=\"Weaving drawdown: warp above shown in first color\">\n",
   )

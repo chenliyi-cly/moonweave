@@ -1,0 +1,153 @@
+{
+  "date": "2026-09-11",
+  "source": "https://mooncakes.io/api-new/v0/modules",
+  "catalogueCount": 2408,
+  "pattern": "weav|textile|treadl|liftplan|drawdown|\\bloom\\b|\\bweft\\b|纺织|织造|织物|提综|浮线",
+  "matches": [
+    {
+      "name": "LF-ai-nb/caseweave",
+      "version": "0.1.1",
+      "yanked": false,
+      "yanked_reason": null,
+      "license": "MIT",
+      "repository": "https://github.com/LF-ai-nb/caseweave",
+      "keywords": [
+        "testing",
+        "pairwise",
+        "covering-array",
+        "constraints",
+        "ci"
+      ],
+      "description": "Deterministic constrained combinatorial test matrix generator for MoonBit.",
+      "is_new": false,
+      "created_at": "2026-08-21T09:32:18.599696"
+    },
+    {
+      "name": "LH-DD-lh/csp-weaver-mbt",
+      "version": "0.1.0",
+      "yanked": false,
+      "yanked_reason": null,
+      "license": "MIT",
+      "repository": "https://github.com/LH-DD-lh/csp-weaver-mbt.git",
+      "keywords": [
+        "csp",
+        "security",
+        "http",
+        "wasm",
+        "audit"
+      ],
+      "description": "MoonBit native Content-Security-Policy parser, auditor and migration planner.",
+      "is_new": false,
+      "created_at": "2026-08-24T15:31:09.886543"
+    },
+    {
+      "name": "NBB2006/routeweave",
+      "version": "0.2.0",
+      "yanked": false,
+      "yanked_reason": null,
+      "license": "MIT",
+      "repository": "https://github.com/NBB2006/routeweave.git",
+      "keywords": [
+        "geojson",
+        "polyline",
+        "route",
+        "gps",
+        "mercator",
+        "map"
+      ],
+      "description": "MoonBit-native route encoding, GeoJSON export, route metrics, simplification, and Web Mercator tile coverage toolkit.",
+      "is_new": false,
+      "created_at": "2026-08-20T06:33:35.691603"
+    },
+    {
+      "name": "SUIKKKA/shiftweave",
+      "version": "0.1.1",
+      "yanked": false,
+      "yanked_reason": null,
+      "license": "Apache-2.0",
+      "repository": "https://github.com/SUIKKKA/wb",
+      "keywords": [
+        "scheduling",
+        "constraint-solving",
+        "roster",
+        "optimization"
+      ],
+      "description": "Explainable workforce scheduling and minimal-disruption repair engine",
+      "is_new": false,
+      "created_at": "2026-08-23T14:33:55.764928"
+    },
+    {
+      "name": "sujy123456/voltweave",
+      "version": "0.1.0",
+      "yanked": false,
+      "yanked_reason": null,
+      "license": "Apache-2.0",
+      "repository": "https://github.com/suqinxi/suqinxi",
+      "keywords": [
+        "energy",
+        "scheduler",
+        "simulation",
+        "wasm",
+        "moonbit"
+      ],
+      "description": "Offline household energy scheduling and outage resilience simulation",
+      "is_new": false,
+      "created_at": "2026-08-08T11:15:17.018777"
+    },
+    {
+      "name": "suqinxi/voltweave",
+      "version": "0.1.1",
+      "yanked": false,
+      "yanked_reason": null,
+      "license": "Apache-2.0",
+      "repository": "https://github.com/suqinxi/suqinxi",
+      "keywords": [
+        "energy",
+        "scheduler",
+        "simulation",
+        "wasm",
+        "moonbit"
+      ],
+      "description": "Offline household energy scheduling and outage resilience simulation",
+      "is_new": false,
+      "created_at": "2026-08-22T10:58:07.016043"
+    },
+    {
+      "name": "zhou506403/rosterweave",
+      "version": "0.1.0",
+      "yanked": false,
+      "yanked_reason": null,
+      "license": "Apache-2.0",
+      "repository": "https://github.com/zhou506403/zhou",
+      "keywords": [
+        "scheduling",
+        "rostering",
+        "optimization",
+        "fairness",
+        "workforce"
+      ],
+      "description": "Explainable fair workforce rostering and resilience analysis in MoonBit",
+      "is_new": false,
+      "created_at": "2026-08-22T13:11:53.926367"
+    }
+  ],
+  "githubQueries": [
+    {
+      "q": "weaving MoonBit",
+      "total_count": 0
+    },
+    {
+      "q": "textile MoonBit",
+      "total_count": 0
+    },
+    {
+      "q": "drawdown MoonBit",
+      "total_count": 0
+    },
+    {
+      "q": "liftplan MoonBit",
+      "total_count": 0
+    }
+  ],
+  "limitation": "New own repository also not returned immediately; GitHub indexing is delayed and zero search results do not prove absence."
+}

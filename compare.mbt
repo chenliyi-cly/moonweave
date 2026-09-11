@@ -21,7 +21,7 @@ pub fn Draft::differences(
   for y, row in a {
     for x, v in row {
       if v != b[y][x] {
-        out.push({ warp: x, pick: y, before: v, after: b[y][x] })
+        out.push({ warp: x, pick: y, before: v, after: b[y][x], })
       }
     }
   }
@@ -51,5 +51,5 @@ pub fn Draft::bindings(self : Draft, periodic? : Bool = false) -> BindingCounts 
       }
     }
   }
-  { warp, weft }
+  { warp, weft, }
 }

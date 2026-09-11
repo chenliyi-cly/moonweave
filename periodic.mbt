@@ -16,7 +16,7 @@ fn cyclic_runs(
   let out = []
   if bits.iter().all(fn(b) { b }) {
     out.push({
-      run: { direction, thread, start: 0, length: n },
+      run: { direction, thread, start: 0, length: n, },
       wraps: true,
       unbounded: true,
     })
@@ -32,7 +32,7 @@ fn cyclic_runs(
     }
     if length >= min_length {
       out.push({
-        run: { direction, thread, start: i, length },
+        run: { direction, thread, start: i, length, },
         wraps: i + length > n,
         unbounded: false,
       })

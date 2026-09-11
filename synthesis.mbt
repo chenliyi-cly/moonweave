@@ -40,5 +40,5 @@ pub fn Draft::direct_tieup(
   if tieup.is_empty() {
     tieup.push([])
   }
-  Ok({ tieup, treadling })
+  Ok({ tieup, treadling, })
 }

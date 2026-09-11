@@ -21,7 +21,7 @@ moon run examples/plain
 
 上方命令也可逐行运行。库无第三方 MoonCakes 依赖，只使用工具链自带 core。**尚未发布到 MoonCakes**，现在从源码使用，不要把查重当作发布成功。正式发布后的包名预留为 chenliyi-cly/moonweave。
 
-本地基线：moon 0.1.20260713、moonc 0.10.4（2026-07-15）。wasm-gc／wasm／js 的检查、构建、27 项测试及进程级验收均本地通过；native 本地仅检查通过，Windows 缺 C 编译器，其编译运行由 Linux CI 验证。当前 CI 采用官方 stable 安装入口并记录工具链版本，非固定二进制版本；实际运行结果以 Actions 为准。
+当前基线：moon 0.1.20260904、moonc 0.10.12（2026-09-07）。历史提交曾在 0.10.4 独立重放；7 月版与 9 月版格式器不同，最终版本请使用上述 9 月版工具链。wasm-gc／wasm／js 的检查、构建、27 项测试及进程级验收均本地通过；native 本地仅检查通过，Windows 缺 C 编译器，其编译运行由 Linux CI 验证。当前 CI 采用官方 stable 安装入口并记录工具链版本，非固定二进制版本；实际运行结果以 Actions 为准。
 
 ## 三个明确、可运行的示例
 
