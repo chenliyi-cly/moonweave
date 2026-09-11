@@ -1,0 +1,7 @@
+import {
+  "chenliyi-cly/moonweave" @weave,
+  "moonbitlang/core/env",
+  "moonbitlang/core/abort",
+}
+
+pkgtype(kind: "executable")
