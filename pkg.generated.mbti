@@ -1,0 +1,131 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "chenliyi-cly/moonweave"
+
+import {
+  "moonbitlang/core/debug",
+  "moonbitlang/core/json",
+}
+
+// Values
+pub fn command(Array[String]) -> Result[String, String]
+
+pub fn draft(Int, Array[Int], Array[Array[Int]]) -> Result[Draft, String]
+
+pub fn from_drawdown(Array[Array[Bool]]) -> Result[Draft, String]
+
+pub fn from_treadles(Int, Array[Int], Array[Array[Int]], Array[Array[Int]], rising? : Bool) -> Result[Draft, String]
+
+pub fn help() -> String
+
+pub fn plain(Int, Int) -> Result[Draft, String]
+
+pub fn read_grid(String) -> Result[Draft, String]
+
+pub fn read_json(String) -> Result[Draft, String]
+
+pub fn satin(Int, Int) -> Result[Draft, String]
+
+pub fn twill(Int, Int) -> Result[Draft, String]
+
+// Errors
+
+// Types and methods
+pub(all) struct Analysis {
+  width : Int
+  height : Int
+  shafts : Int
+  repeat_size : RepeatSize
+  front : Array[PeriodicFloat]
+  back : Array[PeriodicFloat]
+  bindings : BindingCounts
+} derive(Eq, ToJson, @debug.Debug, @json.FromJson)
+
+pub(all) struct BindingCounts {
+  warp : Array[Int]
+  weft : Array[Int]
+} derive(Eq, ToJson, @debug.Debug, @json.FromJson)
+
+pub(all) struct CellDifference {
+  warp : Int
+  pick : Int
+  before : Bool
+  after : Bool
+} derive(Eq, ToJson, @debug.Debug, @json.FromJson)
+
+pub(all) enum Direction {
+  Warp
+  Weft
+} derive(Eq, ToJson, @debug.Debug, @json.FromJson)
+
+pub struct Draft {
+  // private fields
+} derive(Eq, @debug.Debug)
+pub fn Draft::analyze(Self) -> Analysis
+pub fn Draft::bindings(Self, periodic? : Bool) -> BindingCounts
+pub fn Draft::check_loom(Self, LoomLimits) -> Result[Array[Finding], String]
+pub fn Draft::crop(Self, Int, Int, Int, Int) -> Result[Self, String]
+pub fn Draft::differences(Self, Self) -> Result[Array[CellDifference], String]
+pub fn Draft::direct_tieup(Self, Int) -> Result[PedalPlan, String]
+pub fn Draft::drawdown(Self) -> Array[Array[Bool]]
+pub fn Draft::floats(Self, Int, back? : Bool) -> Result[Array[FloatRun], String]
+pub fn Draft::height(Self) -> Int
+pub fn Draft::liftplan(Self) -> Array[Array[Int]]
+pub fn Draft::other_face(Self) -> Self
+pub fn Draft::periodic_floats(Self, Int, back? : Bool) -> Result[Array[PeriodicFloat], String]
+pub fn Draft::reduce_repeat(Self) -> Self
+pub fn Draft::repeat_size(Self) -> RepeatSize
+pub fn Draft::reverse_picks(Self) -> Self
+pub fn Draft::reverse_warp(Self) -> Self
+pub fn Draft::shaft_count(Self) -> Int
+pub fn Draft::shift(Self, Int, Int) -> Self
+pub fn Draft::svg(Self, cell? : Int, warp_color? : String, weft_color? : String) -> Result[String, String]
+pub fn Draft::threads(Self) -> Array[Int]
+pub fn Draft::tile(Self, Int, Int) -> Result[Self, String]
+pub fn Draft::width(Self) -> Int
+pub fn Draft::write_grid(Self) -> String
+pub fn Draft::write_json(Self) -> String
+
+type DraftData derive(ToJson, @json.FromJson)
+
+pub(all) struct Finding {
+  code : String
+  pick : Int
+  thread : Int
+  shaft : Int?
+  direction : Direction?
+  back : Bool?
+} derive(Eq, ToJson, @debug.Debug, @json.FromJson)
+
+pub(all) struct FloatRun {
+  direction : Direction
+  thread : Int
+  start : Int
+  length : Int
+} derive(Eq, ToJson, @debug.Debug, @json.FromJson)
+
+pub(all) struct LoomLimits {
+  shafts : Int
+  raised : Int
+  float_length : Int
+} derive(Eq, @debug.Debug)
+
+pub(all) struct PedalPlan {
+  tieup : Array[Array[Int]]
+  treadling : Array[Array[Int]]
+} derive(Eq, ToJson, @debug.Debug, @json.FromJson)
+
+pub(all) struct PeriodicFloat {
+  run : FloatRun
+  wraps : Bool
+  unbounded : Bool
+} derive(Eq, ToJson, @debug.Debug, @json.FromJson)
+
+pub(all) struct RepeatSize {
+  warp : Int
+  pick : Int
+} derive(Eq, ToJson, @debug.Debug, @json.FromJson)
+
+// Type aliases
+
+// Traits
+
