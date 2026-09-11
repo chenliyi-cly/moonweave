@@ -1,0 +1,276 @@
+[
+  {
+    "sha": "c3f39755c6fec016f7682cc93bfae8b2d7da439f",
+    "subject": "Implement validated immutable weave drafts and rising-shed drawdown",
+    "paths": [
+      ".gitignore",
+      "LICENSE",
+      "docs/competition/duplicate-check.md",
+      "draft.mbt",
+      "draft_test.mbt",
+      "moon.mod",
+      "moon.pkg"
+    ],
+    "fmtExit": 0,
+    "checkExit": 0,
+    "testExit": 0,
+    "testOutput": "Total tests: 2, passed: 2, failed: 0."
+  },
+  {
+    "sha": "53406917b1e6f8594f540e277465b351375dc611",
+    "subject": "Compile multi-treadle tie-ups and normalize sinking sheds",
+    "paths": [
+      "treadles.mbt",
+      "treadles_test.mbt"
+    ],
+    "fmtExit": 0,
+    "checkExit": 0,
+    "testExit": 0,
+    "testOutput": "Total tests: 4, passed: 4, failed: 0."
+  },
+  {
+    "sha": "e08b690a5ceb7771a7d615a7ce54e056b32d20d1",
+    "subject": "Analyze face-aware warp and weft floats with exact coordinates",
+    "paths": [
+      "floats.mbt",
+      "floats_test.mbt"
+    ],
+    "fmtExit": 0,
+    "checkExit": 0,
+    "testExit": 0,
+    "testOutput": "Total tests: 6, passed: 6, failed: 0."
+  },
+  {
+    "sha": "6fae4c5fcf480197d739da83fe307d3c970ef9f8",
+    "subject": "Detect cyclic float seams and unbounded exposure with exhaustive coverage tests",
+    "paths": [
+      "periodic.mbt",
+      "periodic_wbtest.mbt"
+    ],
+    "fmtExit": 0,
+    "checkExit": 0,
+    "testExit": 0,
+    "testOutput": "Total tests: 8, passed: 8, failed: 0."
+  },
+  {
+    "sha": "6d814fa70d47d7160833587ddea7f48fc1bfa0be",
+    "subject": "Validate loom capacity and report closed sheds and unbound threads",
+    "paths": [
+      "loom.mbt",
+      "loom_test.mbt"
+    ],
+    "fmtExit": 0,
+    "checkExit": 0,
+    "testExit": 0,
+    "testOutput": "Total tests: 10, passed: 10, failed: 0."
+  },
+  {
+    "sha": "539fb4bfe06d823c54bf9b7747f44a124962f66c",
+    "subject": "Generate bounded plain twill and coprime satin drafts",
+    "paths": [
+      "recipes.mbt",
+      "recipes_test.mbt"
+    ],
+    "fmtExit": 0,
+    "checkExit": 0,
+    "testExit": 0,
+    "testOutput": "Total tests: 12, passed: 12, failed: 0."
+  },
+  {
+    "sha": "38e1b66243d3d4cd13766a1e95612d0511124183",
+    "subject": "Transform fabric faces and repeat origins with simulation invariants",
+    "paths": [
+      "transform.mbt",
+      "transform_test.mbt"
+    ],
+    "fmtExit": 0,
+    "checkExit": 0,
+    "testExit": 0,
+    "testOutput": "Total tests: 13, passed: 13, failed: 0."
+  },
+  {
+    "sha": "bc5a778e5981764f2e488dae1fb60fa0cbbc8b13",
+    "subject": "Tile and crop finite fabric samples with overflow-safe resource limits",
+    "paths": [
+      "tile.mbt",
+      "tile_test.mbt"
+    ],
+    "fmtExit": 0,
+    "checkExit": 0,
+    "testExit": 0,
+    "testOutput": "Total tests: 14, passed: 14, failed: 0."
+  },
+  {
+    "sha": "be1ce35dffc7d15b10cf4fbd7a6ceadaad4d3f97",
+    "subject": "Find and reduce minimal axis-aligned fabric repeats",
+    "paths": [
+      "repeat.mbt",
+      "repeat_test.mbt"
+    ],
+    "fmtExit": 0,
+    "checkExit": 0,
+    "testExit": 0,
+    "testOutput": "Total tests: 15, passed: 15, failed: 0."
+  },
+  {
+    "sha": "ec120f2962e6bbb24f031a30f62b321e17109939",
+    "subject": "Infer minimum shaft groups from drawdown with exhaustive roundtrip tests",
+    "paths": [
+      "reconstruct.mbt",
+      "reconstruct_test.mbt"
+    ],
+    "fmtExit": 0,
+    "checkExit": 0,
+    "testExit": 0,
+    "testOutput": "Total tests: 17, passed: 17, failed: 0."
+  },
+  {
+    "sha": "85fcfa60b927f20e5e378b641de3e8d438056b6c",
+    "subject": "Synthesize feasible direct tie-ups with explicit pedal capacity failures",
+    "paths": [
+      "synthesis.mbt",
+      "synthesis_test.mbt"
+    ],
+    "fmtExit": 0,
+    "checkExit": 0,
+    "testExit": 0,
+    "testOutput": "Total tests: 18, passed: 18, failed: 0."
+  },
+  {
+    "sha": "20ee9ff71d7a72de914b2d94bb848bf639aa1e7d",
+    "subject": "Compare fabric intersections and measure yarn binding transitions",
+    "paths": [
+      "compare.mbt",
+      "compare_test.mbt"
+    ],
+    "fmtExit": 0,
+    "checkExit": 0,
+    "testExit": 0,
+    "testOutput": "Total tests: 19, passed: 19, failed: 0."
+  },
+  {
+    "sha": "ec36c0e5834f5bfdaff4703806eb74606cf29396",
+    "subject": "Add bounded versioned JSON interchange with strict field and integer validation",
+    "paths": [
+      "exchange.mbt",
+      "exchange_test.mbt"
+    ],
+    "fmtExit": 0,
+    "checkExit": 0,
+    "testExit": 0,
+    "testOutput": "Total tests: 20, passed: 20, failed: 0."
+  },
+  {
+    "sha": "681d3709e985cd79408065b958146c38097510c0",
+    "subject": "Import and export hand-editable interlacement grids with strict dimensions",
+    "paths": [
+      "grid.mbt",
+      "grid_test.mbt"
+    ],
+    "fmtExit": 0,
+    "checkExit": 0,
+    "testExit": 0,
+    "testOutput": "Total tests: 21, passed: 21, failed: 0."
+  },
+  {
+    "sha": "0eabaa376bfcf5b78abdaef06cc895c4eef1957c",
+    "subject": "Render bounded standalone SVG drawdowns with injection-safe palette validation",
+    "paths": [
+      "svg.mbt",
+      "svg_test.mbt"
+    ],
+    "fmtExit": 0,
+    "checkExit": 0,
+    "testExit": 0,
+    "testOutput": "Total tests: 22, passed: 22, failed: 0."
+  },
+  {
+    "sha": "19c7fddf3fb7a1e1e5978beebb999c4ed1f63521",
+    "subject": "Expose pure CLI dispatch and executable recipe import render and analysis commands",
+    "paths": [
+      "cmd/moonweave/main.mbt",
+      "cmd/moonweave/moon.pkg",
+      "command.mbt",
+      "command_test.mbt"
+    ],
+    "fmtExit": 0,
+    "checkExit": 0,
+    "testExit": 0,
+    "testOutput": "Total tests: 23, passed: 23, failed: 0."
+  },
+  {
+    "sha": "07719712136b042d2b79f123852c0ee141ce2638",
+    "subject": "Harden Unicode numeric and resource boundaries with independent float oracle tests",
+    "paths": [
+      "loom.mbt",
+      "robustness_test.mbt",
+      "svg.mbt"
+    ],
+    "fmtExit": 0,
+    "checkExit": 0,
+    "testExit": 0,
+    "testOutput": "Total tests: 26, passed: 26, failed: 0."
+  },
+  {
+    "sha": "1489cd8d06b873ce42f8ecf0a9ddb36ab47e86bb",
+    "subject": "Provide executable Chinese plain weave loom diagnostics and reconstruction examples",
+    "paths": [
+      "examples/loom/main.mbt",
+      "examples/loom/moon.pkg",
+      "examples/plain/main.mbt",
+      "examples/plain/moon.pkg",
+      "examples/reconstruct/main.mbt",
+      "examples/reconstruct/moon.pkg"
+    ],
+    "fmtExit": 0,
+    "checkExit": 0,
+    "testExit": 0,
+    "testOutput": "Total tests: 26, passed: 26, failed: 0."
+  },
+  {
+    "sha": "c0da095dd74112efd6437018f6bf7e8f7b01f3f3",
+    "subject": "Make loom findings actionable with explicit faces yarn directions and grid coordinates",
+    "paths": [
+      "location_test.mbt",
+      "loom.mbt"
+    ],
+    "fmtExit": 0,
+    "checkExit": 0,
+    "testExit": 0,
+    "testOutput": "Total tests: 27, passed: 27, failed: 0."
+  },
+  {
+    "sha": "1c992acd4d1a2b8c11b7d1dc2e9c87834e50f587",
+    "subject": "Enforce multi-target CI with runnable examples process failures and serialized output checks",
+    "paths": [
+      ".github/workflows/ci.yml",
+      "scripts/verify.py"
+    ],
+    "fmtExit": 0,
+    "checkExit": 0,
+    "testExit": 0,
+    "testOutput": "Total tests: 27, passed: 27, failed: 0."
+  },
+  {
+    "sha": "1ae37507bb97efa5453b8868cc56bf9feefb6e03",
+    "subject": "Document Chinese usage examples algorithm guarantees public API and responsible AI provenance",
+    "paths": [
+      "AI_USAGE.md",
+      "CHANGELOG.md",
+      "CONTRIBUTING.md",
+      "README.md",
+      "SECURITY.md",
+      "THIRD_PARTY_NOTICES.md",
+      "cmd/moonweave/pkg.generated.mbti",
+      "docs/algorithms.md",
+      "examples/loom/pkg.generated.mbti",
+      "examples/plain/pkg.generated.mbti",
+      "examples/reconstruct/pkg.generated.mbti",
+      "pkg.generated.mbti"
+    ],
+    "fmtExit": 0,
+    "checkExit": 0,
+    "testExit": 0,
+    "testOutput": "Total tests: 27, passed: 27, failed: 0."
+  }
+]
