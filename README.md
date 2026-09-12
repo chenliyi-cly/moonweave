@@ -2,7 +2,7 @@
 
 MoonWeave 把**穿综、提综或踩踏方案**转换为可检查的经纬交织图，分析跨循环接缝的浮线，并将手绘交织图反推为可执行的综框／直接踏板方案。面向织造教学、数字草稿工具和离线织机设置预检，不是布料物理仿真器。
 
-原创 MoonBit 实现，MIT 许可；维护者／参赛贡献者为 **chenliyi-cly**。AI 辅助范围见 [AI_USAGE.md](AI_USAGE.md)。这是独立于 MoonCSP 的新项目，不沿用其代码或提交计数。
+原创 MoonBit 实现，MIT 许可；维护者／参赛贡献者为 **chenliyi-cly**。AI 辅助范围见 [AI_USAGE.md](AI_USAGE.md)。
 
 ## 获取与验证
 
@@ -19,9 +19,9 @@ moon test --target wasm-gc
 moon run examples/plain
 ```
 
-上方命令也可逐行运行。库无第三方 MoonCakes 依赖，只使用工具链自带 core。**尚未发布到 MoonCakes**，现在从源码使用，不要把查重当作发布成功。正式发布后的包名预留为 chenliyi-cly/moonweave。
+在已有 MoonBit 项目中执行 `moon add chenliyi-cly/moonweave`。包文档：[MoonCakes](https://mooncakes.io/docs/chenliyi-cly/moonweave)。库只依赖工具链自带的 core。
 
-当前基线：moon 0.1.20260904、moonc 0.10.12（2026-09-07）。历史提交曾在 0.10.4 独立重放；7 月版与 9 月版格式器不同，最终版本请使用上述 9 月版工具链。wasm-gc／wasm／js 的检查、构建、27 项测试及进程级验收均本地通过；native 本地仅检查通过，Windows 缺 C 编译器，其编译运行由 Linux CI 验证。当前 CI 采用官方 stable 安装入口并记录工具链版本，非固定二进制版本；实际运行结果以 Actions 为准。
+验证工具链：moon 0.1.20260904、moonc 0.10.12。CI 在 wasm-gc、wasm、js、native 四个目标上运行相同验收脚本；native 使用 Linux C 编译器。
 
 ## 三个明确、可运行的示例
 
@@ -105,15 +105,25 @@ Finding.pick/thread 统一为从 0 开始的投纬／经纱交点；-1 表示不
 - 不支持 WIF 读写（包括部分 WIF），不宣称任何 WIF 标准兼容；不做机械驱动、材料参数仿真、结织／针织、全局最优多踏板合成或生产安全认证。
 - 浮长用“交点个数”而不是毫米；是否可织还依赖线材、张力、密度及具体织机。
 
-## 测试、审计与参赛边界
+## 实现质量与复现
 
-    python scripts/verify.py --target wasm-gc
-    python scripts/verify.py --target wasm
-    python scripts/verify.py --target js
-    python scripts/verify.py --target native
+| 指标 | 验证内容 | 证据 |
+|---|---|---|
+| 27 个命名测试 | 草稿、浮线、反推、格式与错误处理 | `moon test` |
+| 512 张二值图 | 穷举全部 3×3 图样，反推后交点一致，综框数等于不同列签名数 | [reconstruct_test.mbt](reconstruct_test.mbt) |
+| 510 个周期序列 | 穷举长度 1–8 的二值序列，暴露交点恰好覆盖一次 | [periodic_wbtest.mbt](periodic_wbtest.mbt) |
+| 512 张图 × 2 个面 | 与独立逐格遍历算法对照周期浮线，检查经纬方向及定位 | [robustness_test.mbt](robustness_test.mbt) |
+| 262144 个交点 | 接受上限内输入，拒绝超过资源预算的图样 | [robustness_test.mbt](robustness_test.mbt) |
+| 4 个运行目标、3 个示例 | 构建、测试、示例及 CLI JSON/SVG 输出与错误退出 | [verify.py](scripts/verify.py) |
 
-脚本需 Python 3.8+。native 命令另需 C 编译器。验收包含 27 个命名测试，其中循环测试穷举 512 张 3×3 二值图、1–8 位周期浮线以及独立逐格浮线校验；**穷举样本数不伪装成命名测试数量**。还有资源边界、Unicode、非法输入、三示例和真实 CLI 进程的 JSON／SVG／错误退出验证。
+以上为正确性和输入边界指标，不是吞吐量或代码覆盖率；样本数是测试内部的数据规模。
 
-[查重记录](docs/competition/duplicate-check.md)说明 MoonCSP 驳回原因及新题目的检索边界。2026-09-11 检查 2408 条 MoonCakes 元数据及 GitHub 相关搜索，已查范围未发现直接同题项目；不覆盖所有未索引代码，也不代表组委会认可。正式初审／验收由组委会决定。
+```text
+python scripts/verify.py --target wasm-gc
+python scripts/verify.py --target wasm
+python scripts/verify.py --target js
+python scripts/verify.py --target native
+```
 
+脚本需 Python 3.8+；native 另需 C 编译器。最小综框结论及周期浮线算法见 [算法说明](docs/algorithms.md)。
 参见 [贡献指南](CONTRIBUTING.md)、[安全边界](SECURITY.md)、[第三方说明](THIRD_PARTY_NOTICES.md)及 [变更记录](CHANGELOG.md)。
